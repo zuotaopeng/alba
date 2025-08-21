@@ -16,10 +16,11 @@ return new class extends Migration
         Schema::create('max_diffs', function (Blueprint $table) {
             $table->id();
             $table->date('check_day');
+            $table->string('coin',10);
             $table->string('buy_exchange',20);
             $table->string('sell_exchange',20);
             $table->double('max_diff');
-            $table->dateTime('trade_time');
+            $table->dateTime('check_time');
             $table->timestamps();
         });
     }

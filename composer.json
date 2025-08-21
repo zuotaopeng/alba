@@ -7,11 +7,9 @@
     "require": {
         "php": "^8.0.2",
         "guzzlehttp/guzzle": "^7.2",
-        "jaggedsoft/php-binance-api": "^0.5.28",
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
-        "stk2k/phitflyer": "^0.3.1",
         "kucoin/kucoin-php-sdk": "~1.1.0",
         "linwj/mxc": "^1.0",
         "ext-curl": "*",
