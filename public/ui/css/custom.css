@@ -1,0 +1,400 @@
+[data-header-position="fixed"] .content-body {
+  padding-top: 4.3rem
+}
+.content-body {
+  padding-bottom: 50px;
+}
+
+.h-40 {
+  height: 40% !important; 
+}
+.h-45 {
+  height: 45% !important; 
+}
+.h-55 {
+  height: 55% !important; 
+}
+.h-60 {
+  height: 60% !important; 
+}
+
+.footer {
+  z-index: 1000;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer {
+  border-top: 1px solid #999999;
+  border-radius: 0;
+  /*box-shadow: 0px -2px 10px 3px #00000080;*/
+}
+
+[data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .copyright, [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .plus-box {
+  display: block !important;
+}
+
+.nav-header
+{
+  background-color: rgb(89, 68, 152);
+  /*background-image: linear-gradient(to left, rgb(89, 68, 152), rgb(182, 69, 116) 70%, rgb(232, 63, 77));*/
+}
+@media (max-width: 575.98px) {
+  .nav-header
+  {
+      background-color: transparent !important;
+      background-image: none !important;
+  }
+}
+
+.header
+{
+  background-color: transparent !important;
+  height: 70px !important;
+}
+
+.datepicker.datepicker-dropdown,
+.dlabnav {
+  z-index: 1500 !important;
+}
+
+.dlabnav,
+.app-background-gradient {
+  background-color: rgb(89, 68, 152) !important;
+  background-image: linear-gradient(To bottom, rgb(89, 68, 152), rgb(182, 69, 116) 80%, rgb(232, 63, 77));
+}
+
+.app-background-gradient-to-right {
+  background-color: rgb(89, 68, 152) !important;
+  background-image: linear-gradient(135deg, rgb(232, 63, 77), rgb(182, 69, 116) 20%, rgb(89, 68, 152) 90%); /* linear-gradient(to right, rgb(89, 68, 152), rgb(182, 69, 116) 70%, rgb(232, 63, 77)); */
+}
+
+.app-background-gradient-to-left {
+  background-color: rgb(89, 68, 152) !important;
+  background-image: linear-gradient(to left, rgb(89, 68, 152), rgb(182, 69, 116) 70%, rgb(232, 63, 77));
+}
+
+.box-custom {
+  border-radius: 20px;
+  /* border: 1px #fff solid;*/
+  box-shadow: 7px 6px 13px 0px #00000080, -5px -5px 8px 0px #ffffff20;
+  background: linear-gradient(135deg, rgb(38, 39, 43),rgb(52, 57, 63) 40%);
+}
+
+[data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .dlabnav .profile-content {
+  display: none;
+}
+
+.dlabnav .metismenu > li.mm-active > a svg path,
+.dlabnav .metismenu a:hover svg path {
+  fill: #fff;
+  fill-opacity: 0.5;
+  stroke: #fff;
+  stroke-opacity: 0.5;
+}
+
+.footer {
+  background-color: transparent !important;
+  /* left: 0; */
+}
+
+.background-modal {
+  background-color: rgba(0,0,0, 0.45);
+}
+
+.btn-success {
+  background-color: #d0a568 !important;
+  border: 0px;
+}
+.btn-primary {
+  background-color: #5E4598 !important;
+  border: 0px;
+}
+.btn-gradient {
+  background-image: linear-gradient(to bottom, #5E4598, #8E4A93, #E73F4E);
+  /*
+  background-image: linear-gradient(to top, rgba(255,255,255,0.8), rgba(255,255,255,0.6) 30%, rgba(255,255,255,.4) 70%, rgba(0,0,0,0));
+  background-repeat: repeat-x;
+  */
+}
+
+.form-control-custom {
+  border: none !important;
+  border-radius: 50rem !important;
+  background: rgba(255, 255, 255, 0.4) !important;
+  color: #ffffff;
+  text-align: center;
+}
+.form-control-custom::placeholder {
+  color: #ffffff;
+}
+
+.form-control-custom-2 {
+  background-color: transparent !important;
+  border-color: rgba(255, 255, 255, 0.6) !important;
+  border-radius: 16px !important;
+  color: #ffffff;
+}
+.form-control-custom-2:hover,
+.form-control-custom-2:focus, 
+.form-control-custom-2.active,
+.form-control-custom-2::placeholder {
+  color: #ffffff;
+}
+
+.form-control-custom-3 {
+  padding: 10px 14px;
+  background-color: #32363b !important;
+  border-radius: 20px !important;
+  box-shadow: inset 4px 6px 2px #00000060, inset -3px -4px 1px #ffffff30
+}
+
+.form-control-custom-3:hover,
+.form-control-custom-3:focus, 
+.form-control-custom-3.active {
+  padding: 10px 14px;
+  background-color: #32363b !important;
+  border-radius: 20px !important;
+  box-shadow: inset 4px 6px 2px #00000060, inset -3px -4px 1px #ffffff30
+}
+
+[data-theme-version="dark"] .bootstrap-select .btn:active, 
+[data-theme-version="dark"] .bootstrap-select .btn:focus, 
+[data-theme-version="dark"] .bootstrap-select .btn:hover {
+  color: #fff !important;
+}
+
+/*
+.app-background {
+  background-image: url("../images/background.png");
+  background-size: cover;
+}
+*/
+
+#main-wrapper {
+  background: transparent !important;
+}
+
+.dlabnav .metismenu > li > a {
+  color: #fff !important;;
+}
+.dlabnav .metismenu > li > a > img {
+  width: 16px;
+}
+.dlabnav .metismenu > li:hover > a, .dlabnav .metismenu > li:focus > a {
+  color: rgba(255, 255, 255, 0.6) !important;;
+}
+/*
+.dlabnav .metismenu > li.mm-active > a {
+  background: #9E7050 !important;
+}
+*/
+
+[data-theme-version="dark"] .datepicker.datepicker-dropdown .datepicker-days .table-condensed tr th {
+  color: #fff;
+}
+
+[data-theme-version="dark"] .datepicker .datepicker-switch:hover, .datepicker .next:hover, 
+[data-theme-version="dark"] .datepicker .prev:hover, .datepicker tfoot tr th:hover {
+  background: var(--rgba-primary-1);
+  color: #fff !important;
+}
+
+[data-theme-version="dark"] .nav-pills .nav-link-text:hover,
+[data-theme-version="dark"] .nav-pills .nav-link-text.active, 
+[data-theme-version="dark"] .nav-pills:hover .show > .nav-link-text {
+  background: linear-gradient(To bottom, rgb(89, 68, 152), rgb(232, 63, 77));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/************ authincation pages css custom ***********/
+.authincation-background {
+  background-image: url("../images/background.png");
+  background-size: cover;
+}
+.authincation-content {
+  background: none !important;
+  box-shadow: none !important;
+}
+
+.read-content-register {
+  height: 100px;
+  overflow-y: auto;
+  border: 1px solid #fff;
+  padding: 0.7rem;
+}
+
+.read-content-register p {
+  line-height: 1.5 !important;
+}
+
+.footer-auth {
+  left: 0;
+  padding-left: 0 !important;
+}
+
+.auth-form .nav-header {
+  width: calc(100% - 5.8rem);
+  background: transparent !important;;
+}
+@media (min-width: 576px){
+  .auth-form .nav-header {
+    width: 422px;
+  }
+}
+@media (min-width: 768px){
+  .auth-form .nav-header {
+    width: 242px;
+  }
+}
+@media (min-width: 992px){
+  .auth-form .nav-header {
+    width: 362px;
+  }
+}
+@media (min-width: 1200px){
+  .auth-form .nav-header {
+    width: 454px;
+  }
+}
+
+.page-r-logo img {
+  width: 100%;
+}
+
+
+/**** toggle checkbox custom1 ***/
+.toggle-custom1 .toggle {
+  background: transparent !important;
+  border: 0;
+  padding: 0;
+}
+.toggle-custom1 .toggle.btn {
+  width: 96px !important;
+  height: 42px !important;
+  border-radius: 42px;
+  background-color: rgb(38, 39, 43) !important;
+  background-image: linear-gradient(150deg, rgb(38, 39, 43),rgb(52, 57, 63) 60%) !important;
+  box-shadow: 3px 3px 3px 0px #00000080, -2px -2px 3px 0px #ffffff40;
+}
+.toggle-custom1 .toggle-group {
+  left: -24%;
+  top: 7px !important;
+  height: 30px;
+}
+.toggle-custom1 .toggle.off .toggle-group {
+  left: -76%;
+}
+
+.toggle-custom1 .toggle-on,
+.toggle-custom1 .toggle-off {
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  top: 0px;
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+.toggle-custom1 .toggle-on.btn,
+.toggle-custom1 .toggle-off.btn,
+.toggle-custom1 .toggle-on.btn:hover,
+.toggle-custom1 .toggle-off.btn:hover{
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+
+.toggle-custom1 .toggle-on.btn,
+.toggle-custom1 .toggle-on.btn:hover {
+  padding-left: 16px;
+  background: linear-gradient(To bottom, rgb(89, 68, 152), rgb(232, 63, 77));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.toggle-custom1 .toggle-off.btn,
+.toggle-custom1 .toggle-off.btn:hover {
+  padding-right: 16px;
+  color: #272a2f !important;
+}
+
+.toggle-custom1 .toggle-handle {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  /*top: -2px;*/
+  background-image: url("../images/checkbox_on_1.png") !important;
+  background-size: 30px !important;
+  box-shadow: 2px 1px 4px 1px #00000080, -1px -1px 4px 1px #ffffff30;
+  border: none !important;
+}
+.toggle-custom1 .toggle.off .toggle-handle {
+  background-image: url("../images/checkbox_off_1.png") !important;
+  box-shadow: 2px 1px 4px 1px #00000080, -1px -1px 4px 1px #ffffff30;
+}
+
+@media (min-width: 1601px){
+  .checkbox-warning .form-check-input:checked[type="radio"]:after {
+      top: 0.415rem;
+      left: 0.415rem;
+  }
+  /*
+  .toggle-custom1 .toggle-on.btn,
+  .toggle-custom1 .toggle-off.btn,
+  .toggle-custom1 .toggle-on.btn:hover,
+  .toggle-custom1 .toggle-off.btn:hover {
+      font-size: 14px;
+  }
+  */
+}
+
+/**** toggle checkbox custom2 ***/
+.toggle-custom2 .toggle {
+  background: transparent !important;
+  border: 0;
+}
+.toggle-custom2 .toggle.btn {
+  width: 57px !important;
+  height: 36px !important;
+}
+
+.toggle-custom2 .toggle-group {
+  left: -18% !important;
+}
+.toggle-custom2 .toggle.off .toggle-group {
+  left: -82% !important;
+}
+
+.toggle-custom2 .toggle-on,
+.toggle-custom2 .toggle-off {
+  box-sizing: border-box;
+  height: 2px;
+  padding: 0;
+  margin: 0;
+  top: 10px;
+  color: transparent !important;
+}
+.toggle-custom2 .toggle-on.btn,
+.toggle-custom2 .toggle-off.btn,
+.toggle-custom2 .toggle-on.btn:hover,
+.toggle-custom2 .toggle-off.btn:hover{
+  color: transparent !important;
+}
+
+.toggle-custom2 .toggle-handle {
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  padding: 0;
+  /* background-color: #d0a568 !important; */
+  background-image: url("../images/checkbox_on_2.png") !important;
+  background-size: 18px !important;
+}
+.toggle-custom2 .toggle.off .toggle-handle {
+  /* background-color: #767676 !important; */
+  background-image: url("../images/checkbox_off_2.png") !important;
+}

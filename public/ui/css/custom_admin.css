@@ -1,0 +1,14 @@
+.content-body {
+  padding-bottom: 50px;
+}
+
+.footer {
+  z-index: 1000;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+[data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .copyright, [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .plus-box {
+  display: block !important;
+}

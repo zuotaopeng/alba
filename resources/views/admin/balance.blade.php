@@ -1,0 +1,283 @@
+@extends('layouts.admin')
+
+@section('content')
+    <div class="row">
+        <div class="col-xl-12">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="page-titles style1">
+                        <div class="d-flex align-items-center">
+                            <h2 class="heading">残高確認</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    @include('include.status')
+                    @include('include.errors')
+
+                    <div class="table-responsive mt-4">
+                        <table class="table table-bordered table-responsive-sm">
+                            <thead>
+                            <tr>
+                                <th rowspan="2" class="text-center" style="vertical-align: middle;">取引所</th>
+                                <th colspan="7" class="text-center">残高（ユーザー名：{{$user->name}}）</th>
+                            </tr>
+                            <tr>
+                                <th>日本円</th>
+                                <th>BTC</th>
+                                <th>ETH</th>
+                                <th>XRP</th>
+                                <th>LTC</th>
+                                <th>BCH</th>
+                                <th>USDT</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                            <tr>
+                                <td>BitFlyer</td>
+                                <td>
+                                    @if(is_numeric($user->bitflyer_jpy))
+                                        {{number_format($user->bitflyer_jpy)}}
+                                    @else
+                                        {{$user->bitflyer_jpy}}
+                                    @endif
+                                </td>
+                                <td>
+                                    @if(is_numeric($user->bitflyer_btc))
+                                        {{number_format($user->bitflyer_btc,6)}}
+                                    @else
+                                        {{$user->bitflyer_btc}}
+                                    @endif
+                                </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>コインチェック</td>
+                                <td>
+                                    @if(is_numeric($user->coincheck_jpy))
+                                        {{number_format($user->coincheck_jpy)}}
+                                    @else
+                                        {{$user->coincheck_jpy}}
+                                    @endif
+                                </td>
+                                <td>
+                                    @if(is_numeric($user->coincheck_btc))
+                                        {{number_format($user->coincheck_btc,6)}}
+                                    @else
+                                        {{$user->coincheck_btc}}
+                                    @endif
+                                </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>GMOコイン</td>
+                                <td>
+                                    @if(is_numeric($user->gmo_jpy))
+                                        {{number_format($user->gmo_jpy)}}
+                                    @else
+                                        {{$user->gmo_jpy}}
+                                    @endif
+                                </td>
+                                <td>
+                                    @if(is_numeric($user->gmo_btc))
+                                        {{number_format($user->gmo_btc,6)}}
+                                    @else
+                                        {{$user->gmo_btc}}
+                                    @endif
+                                </td>
+                                <td>
+                                    @if(is_numeric($user->gmo_eth))
+                                        {{number_format($user->gmo_eth)}}
+                                    @else
+                                        {{$user->gmo_eth}}
+                                    @endif
+                                <td>
+                                    @if(is_numeric($user->gmo_xrp))
+                                        {{number_format($user->gmo_xrp,3)}}
+                                    @else
+                                        {{$user->gmo_xrp}}
+                                    @endif
+                                <td>
+                                    @if(is_numeric($user->gmo_ltc))
+                                        {{number_format($user->gmo_ltc,2)}}
+                                    @else
+                                        {{$user->gmo_ltc}}
+                                    @endif
+                                </td>
+                                <td>
+                                    @if(is_numeric($user->gmo_bch))
+                                        {{number_format($user->gmo_bch,1)}}
+                                    @else
+                                        {{$user->gmo_bch}}
+                                    @endif
+                                </td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>bitbank</td>
+                                <td>
+                                    @if(is_numeric($user->bitbank_jpy))
+                                        {{number_format($user->bitbank_jpy)}}
+                                    @else
+                                        {{$user->bitbank_jpy}}
+                                    @endif
+                                </td>
+                                <td>
+                                    @if(is_numeric($user->bitbank_btc))
+                                        {{number_format($user->bitbank_btc,6)}}
+                                    @else
+                                        {{$user->bitbank_btc}}
+                                    @endif
+                                </td>
+                                <td>
+                                    @if(is_numeric($user->bitbank_eth))
+                                        {{number_format($user->bitbank_eth)}}
+                                    @else
+                                        {{$user->bitbank_eth}}
+                                    @endif
+                                <td>
+                                    @if(is_numeric($user->bitbank_xrp))
+                                        {{number_format($user->bitbank_xrp,3)}}
+                                    @else
+                                        {{$user->bitbank_xrp}}
+                                    @endif
+                                <td>
+                                    @if(is_numeric($user->bitbank_ltc))
+                                        {{number_format($user->bitbank_ltc,2)}}
+                                    @else
+                                        {{$user->bitbank_ltc}}
+                                    @endif
+                                </td>
+                                <td>
+                                    @if(is_numeric($user->bitbank_bch))
+                                        {{number_format($user->bitbank_bch,1)}}
+                                    @else
+                                        {{$user->bitbank_bch}}
+                                    @endif
+                                </td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>Gate.io</td>
+                                <td>-</td>
+                                <td>
+                                    @if(is_numeric($user->gate_btc))
+                                        {{number_format($user->gate_btc,6)}}
+                                    @else
+                                        {{$user->gate_btc}}
+                                    @endif
+                                </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>
+                                    @if(is_numeric($user->gate_usdt))
+                                        {{number_format($user->gate_usdt)}}
+                                    @else
+                                        {{$user->gate_usdt}}
+                                    @endif
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>kucoin</td>
+                                <td>-</td>
+                                <td>
+                                    @if(is_numeric($user->kucoin_btc))
+                                        {{number_format($user->kucoin_btc,6)}}
+                                    @else
+                                        {{$user->kucoin_btc}}
+                                    @endif
+                                </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>
+                                    @if(is_numeric($user->kucoin_usdt))
+                                        {{number_format($user->kucoin_usdt)}}
+                                    @else
+                                        {{$user->kucoin_usdt}}
+                                    @endif
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>mexc</td>
+                                <td>-</td>
+                                <td>
+                                    @if(is_numeric($user->mexc_btc))
+                                        {{number_format($user->mexc_btc,6)}}
+                                    @else
+                                        {{$user->mexc_btc}}
+                                    @endif
+                                </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>
+                                    @if(is_numeric($user->mexc_usdt))
+                                        {{number_format($user->mexc_usdt)}}
+                                    @else
+                                        {{$user->mexc_usdt}}
+                                    @endif
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Bitget</td>
+                                <td>-</td>
+                                <td>
+                                    @if(is_numeric($user->bitget_btc))
+                                        {{number_format($user->bitget_btc,6)}}
+                                    @else
+                                        {{$user->bitget_btc}}
+                                    @endif
+                                </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>
+                                    @if(is_numeric($user->bitget_usdt))
+                                        {{number_format($user->bitget_usdt)}}
+                                    @else
+                                        {{$user->bitget_usdt}}
+                                    @endif
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+@endsection
+
+@section('script')
+    <script>
+        $(function() {
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+
+        });
+    </script>
+@endsection
+
