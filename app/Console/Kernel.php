@@ -17,14 +17,16 @@ class Kernel extends ConsoleKernel
     {
         //rate
         for ($i = 0; $i < 60; $i = $i + 3) {
-            $schedule->command('rate:batch',['--delay'=> $i])->everyMinute();
+            $schedule->command('rate:batch', ['--delay' => $i])->everyMinute();
         }
+        //trade
         for ($i = 0; $i < 60; $i = $i + 10) {
-            $schedule->command('btc:monitoring',['--delay'=> $i])->everyMinute();
-            $schedule->command('eth:monitoring',['--delay'=> $i])->everyMinute();
-            $schedule->command('xrp:monitoring',['--delay'=> $i])->everyMinute();
+            $schedule->command('arb:monitor', ['--delay' => $i, '--symbol' => 'BTC/USDT'])->everyMinute();
+            $schedule->command('arb:monitor', ['--delay' => $i, '--symbol' => 'ETH/USDT'])->everyMinute();
+            $schedule->command('arb:monitor', ['--delay' => $i, '--symbol' => 'XRP/USDT'])->everyMinute();
         }
-        $schedule->command('balance:batch')->hourly();
+        //balance
+        $schedule->command('balance:monitoring')->hourly()->withoutOverlapping();
 
     }
 

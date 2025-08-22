@@ -4,7 +4,6 @@ namespace App\Console\Commands;
 
 use App\Library\Common;
 use Illuminate\Console\Command;
-use PhitFlyer\PhitFlyerClient;
 
 class TestCommand extends Command
 {

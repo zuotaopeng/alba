@@ -6,15 +6,17 @@
     "license": "MIT",
     "require": {
         "php": "^8.0.2",
+        "ext-curl": "*",
+        "ext-dom": "*",
+        "ext-simplexml": "*",
+        "ccxt/ccxt": "^4",
         "guzzlehttp/guzzle": "^7.2",
+        "kucoin/kucoin-php-sdk": "~1.1.0",
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
-        "kucoin/kucoin-php-sdk": "~1.1.0",
         "linwj/mxc": "^1.0",
-        "ext-curl": "*",
-        "ext-dom": "*",
-        "ext-simplexml": "*"
+        "react/promise": "^3"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
@@ -31,7 +33,10 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
-        }
+        },
+        "exclude-from-classmap": [
+            "vendor/ccxt/ccxt/php/pro/*"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
